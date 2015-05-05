@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<Script Language="JavaScript">
+<!--
+var spSTim11="¡¡";
+function time01() {
+var dayTim,jiTim,funTim,byoTim,goze;
+dayTim=new Date();
+jiTim=dayTim.getHours();
+funTim=dayTim.getMinutes();
+byoTim=dayTim.getSeconds();
+if (jiTim<12) goze="¸áÁ° ";
+else {
+goze="¸á¸å ";
+jiTim=jiTim-12;
+}
+document.time01.timeform.value=spSTim11+goze+jiTim+"»þ"+funTim+"Ê¬"+byoTim+"ÉÃ";
+setTimeout("time01()",1000);
+}
+// End -->
+</Script>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<!-- Start ¥Ø¥Ã¥À¡¼¥Ð¡¼ -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="background:#CC6600;border-bottom:1px solid #FFFFFF">
+<tr>
+<td height="8"></td>
+</tr>
+</table>
+<!-- End ¥Ø¥Ã¥À¡¼¥Ð¡¼ -->
+<!-- Start ¥Ø¥Ã¥À¡¼ -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+<td width="170" valign="middle" align="center" style="background-color:#FFCC33;border-bottom:1px solid #FFFFFF">
+<a href="<{$xoops_url}>"><img src="<{$xoops_imageurl}>logo.gif"></a></td>
+<td valign="middle" align="center" style="background-color:#FFCC33;border-bottom:1px solid #FFFFFF"><{$xoops_banner}>
+</td>
+<td valign="middle" align="right" style="background-color:#FFCC33;border-bottom:1px solid #FFFFFF">
+<font style="font-size:11px;color:#720D09;">¤¿¤À¤¤¤Þ¤Î»þ¹ï</font> <img src="<{$xoops_imageurl}>tokei.gif">&nbsp;&nbsp;<FORM NAME="time01"><INPUT TYPE="text" size="22" NAME="timeform" style="border-style:solid;border-width:1px;border-color:#702D09;color:#702D09;background:#FFFFFF;">&nbsp;</FORM><Script Language="JavaScript">
+<!-- 
+time01();
+//-->
+</Script>&nbsp;</td>
+</tr>
+<tr>
+<td colspan=3 valign="bottom" align="right" class="navbar" style="background-color:#FF9900;border-bottom:1px solid #FFFFFF; padding-bottom:2px;"><br>
+<a href="<{$xoops_url}>/" title="¥È¥Ã¥×¥Ú¡¼¥¸¤ØÌá¤ë">HOME</a>&nbsp;&nbsp;
+<a href="<{$xoops_url}>/modules/news/" title="¥Ë¥å¡¼¥¹">NEWS</a>&nbsp;&nbsp;
+<a href="<{$xoops_url}>/modules/newbb/" title="ÅÅ»Ò·Ç¼¨ÈÄ">FORUM</a>&nbsp;&nbsp;
+<a href="<{$xoops_url}>/modules/wfdownloads/" title="¥À¥¦¥ó¥í¡¼¥É">DOWNLOAD</a>&nbsp;&nbsp;
+<a href="<{$xoops_url}>/modules/mylinks/" title="¥ê¥ó¥¯½¸">LINK</a>&nbsp;&nbsp;
+<a href="<{$xoops_url}>/modules/smartfaq/" title="¤è¤¯¤¢¤ë¼ÁÌä¤ÈÅú¤¨">FAQ</a>&nbsp;&nbsp;
+</td></tr>
+</table>
+<!-- End ¥Ø¥Ã¥À¡¼ -->
+<!-- Start ¥Ø¥Ã¥À¡¼¥Ð¡¼ -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="background:#CC6600;border-bottom:2px solid #FFFFFF">
+<tr><td height="8"></td>
+</tr>
+</table>
+<!-- End ¥Ø¥Ã¥À¡¼¥Ð¡¼ -->
+<!-- ¥á¥¤¥ó¥³¥ó¥Æ¥ó¥Ä -->
+<table width="100%" cellpadding="0" border="0">
+<tr>
+<!-- Start left blocks loop -->
+<td id="leftcolumn" valign="top">
+<{foreach item=block from=$xoops_lblocks}>
+<{include file="kaleidoscope/theme_blockleft.html"}>
+<{/foreach}>
+</td>
+<!-- Fim do "loop" dos blocos da esquerda -->
+<td> </td>
+<!-- Display center blocks if any -->
+<td width="100%" valign="top" class="contentbox">
+<{if $xoops_showcblock == 1}>
+<table width="98%" cellpadding="3" cellspacing="3" align="center">
+<tr>
+<td class="centercolumn" valign="top" colspan="2">
+<div class="centercolumn">
+ <!-- Start center-center blocks loop -->
+ <{foreach item=block from=$xoops_ccblocks}>
+ <{include file="kaleidoscope/theme_blockcenter_c.html"}>
+ <br />
+ <{/foreach}>
+ <!-- End center-center blocks loop -->
+</div>
+</td></tr>
+</table>
+<{/if}>
+<!-- End display center blocks -->
+<div class="contentbox">
+<{$xoops_contents}>
+</div>
+<table width="98%" cellpadding="3" cellspacing="3" align="center">
+<tr>
+<td class="centerLcolumn" valign="top">
+<div class="centerLcolumn">
+<!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+<{include file="kaleidoscope/theme_blockcenter_l.html"}>
+<{/foreach}>
+<!-- End center-left blocks loop -->
+</div>
+</td>
+<td class="centerRcolumn" valign="top">
+<div class="centerRcolumn">
+<!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+<{include file="kaleidoscope/theme_blockcenter_r.html"}>
+<{/foreach}>
+<!-- End center-right blocks loop -->
+</div>
+ </td>
+</tr>
+</table>
+</td>
+<td> </td>
+<{if $xoops_showrblock == 1}>
+<td id="rightcolumn" valign="top">
+<!-- Início dos blocos da direita -->
+<{foreach item=block from=$xoops_rblocks}>
+<{include file="kaleidoscope/theme_blockright.html"}>
+<{/foreach}>
+<!-- End right blocks loop -->
+</td>
+<{else}>
+<td width="10" style="background-image: url(<{$xoops_imageurl}>bg_right2.gif);"><img src="<{$xoops_imageurl}>dummy.gif" width="10" height="10" alt="" /></td>
+<{/if}>
+</tr>
+<tr>
+<td colspan="5" width="100%">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tr><td style="background: #FF9900;height:5px;">&nbsp;</td></tr>
+<tr><td style="background: #666666;height:34px;text-align:center;font-size:10px;color:#FFFFFF;">Copyright (C) 2004 Yoshinogawa.net Project All right reserved.<br>Powerd by OCEAN-NET</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</body>
+</HTML>
